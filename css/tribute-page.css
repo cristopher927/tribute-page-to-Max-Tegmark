@@ -1,0 +1,86 @@
+body.body-class {
+	font-size: 20px;
+	text-align: center;
+  background-color: black;
+  background-image:url('http://dreamatico.com/data_images/stars/stars-8.jpg');
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main {
+	background-color: hsla(280, 10%, 70%, 0.8);
+	border:1px solid #E6E6E6;
+	margin:60px;
+	text-align: center;
+}
+
+.h1 {
+	font-size: 50px;
+	padding-top: 30px;
+}
+
+.h3 {
+	font-size: 30px;
+}
+
+.iframe {
+	padding-bottom: 
+}
+
+.big-p {
+	padding-bottom: 30px;
+}
+
+figure {padding-bottom: 30px;}
+
+figcaption {background-color: white;}
+
+main p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.div2 {
+	text-align: left;
+}
+
+div.div2 h3 {
+	padding-left: 20px;
+}
+
+div.div2 p {
+	padding-left: 20px;
+}
+
+body.body-class a.name-link {
+	text-decoration: none;
+  color:blue;
+}
+
+body.body-class a.name-link:hover {
+		background-color: blue;
+	color: white;
+}
+
+@media only screen and (max-width: 480px) {
+	body.body-class {
+		font-size: 18px;
+	}
+
+	main {
+		margin: 15px;
+	}
+
+	.last-p, .last-link {
+		font-size: 18px;
+	}
+
+	main .h1 {
+		font-size: 35px;
+	}
+
+	main .h3 {
+		font-size: 25px;
+		padding: 0 10px 0 10px;
+	}
