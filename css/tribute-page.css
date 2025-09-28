@@ -1,86 +1,120 @@
 body.body-class {
-	font-size: 20px;
-	text-align: center;
+  font-size: 20px;
+  text-align: center;
   background-color: black;
-  background-image:url('http://dreamatico.com/data_images/stars/stars-8.jpg');
+  background-image: url('../images/falling_stars.jpg');
   background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
+/* Main container */
 main {
-	background-color: hsla(280, 10%, 70%, 0.8);
-	border:1px solid #E6E6E6;
-	margin:60px;
-	text-align: center;
+  background-color: hsla(280, 10%, 70%, 0.8);
+  border: 1px solid #E6E6E6;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .h1 {
-	font-size: 50px;
-	padding-top: 30px;
+  font-size: 2.5rem;
+  padding-top: 20px;
 }
 
 .h3 {
-	font-size: 30px;
+  font-size: 1.5rem;
 }
 
-.iframe {
-	padding-bottom: 
+/* Responsive images */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
+/* Responsive YouTube iframe */
+.responsive-iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Text spacing */
 .big-p {
-	padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
-figure {padding-bottom: 30px;}
+figure {
+  padding-bottom: 20px;
+}
 
-figcaption {background-color: white;}
+figcaption {
+  background-color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+}
 
 main p {
-	padding-left: 20px;
-	padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 1.6;
 }
 
 div.div2 {
-	text-align: left;
+  text-align: left;
 }
 
 div.div2 h3 {
-	padding-left: 20px;
+  padding-left: 10px;
 }
 
 div.div2 p {
-	padding-left: 20px;
+  padding-left: 10px;
 }
 
 body.body-class a.name-link {
-	text-decoration: none;
-  color:blue;
+  text-decoration: none;
+  color: blue;
 }
 
 body.body-class a.name-link:hover {
-		background-color: blue;
-	color: white;
+  background-color: blue;
+  color: white;
 }
 
-@media only screen and (max-width: 480px) {
-	body.body-class {
-		font-size: 18px;
-	}
+/* Media Queries - Mobile First */
+@media (max-width: 600px) {
+  body.body-class {
+    font-size: 16px;
+    text-align: left;
+  }
 
-	main {
-		margin: 15px;
-	}
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
 
-	.last-p, .last-link {
-		font-size: 18px;
-	}
+  .h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 
-	main .h1 {
-		font-size: 35px;
-	}
+  .h3 {
+    font-size: 1.2rem;
+  }
 
-	main .h3 {
-		font-size: 25px;
-		padding: 0 10px 0 10px;
-	}
+  main p {
+    padding: 10px;
+  }
+
+  div.div2 {
+    text-align: left;
+  }
+}
